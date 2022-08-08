@@ -1,5 +1,5 @@
 {
-  "name": "sample-app-slim",
+  "name": "activate-component-without-dom-reference",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
