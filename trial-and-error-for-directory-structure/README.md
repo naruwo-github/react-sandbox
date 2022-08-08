@@ -3,6 +3,9 @@
 This is a trial and error place considering about directory structure.\
 Post subjective optimizations for now.
 
+## Details
+Please show `src/README.md`([here](/src)).
+
 ## Run this app
 
 In the project directory, you can execute `npm start`.\

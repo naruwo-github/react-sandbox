@@ -1,18 +1,18 @@
-src/
-  app/
-    __mocks__/
-    __tests__/
-    components/
-    styles/
-  assets/
-    images/
-    styles/
-    tools/
-  common/
-    __mocks__/
-    __tests__/
-    components/
-    styles/
-  index.tsx
-  react-app-env.d.ts
-  setupTests.ts
+* src/
+  * app/
+    * __mocks__/
+    * __tests__/
+    * components/
+    * styles/
+  * assets/
+    * images/
+    * styles/
+    * tools/
+  * common/
+    * __mocks__/
+    * __tests__/
+    * components/
+    * styles/
+  * index.tsx
+  * react-app-env.d.ts
+  * setupTests.ts
