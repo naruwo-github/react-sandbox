@@ -11,5 +11,9 @@ This project has many experiments of React.js.
   * Inserting rendering mechanisms into arbitrary multiple HTML elements.
 * `rendering-in-multiple-places-extended/`
   * The same html output with `rendering-in-multiple-places` but the other way to render.
+* `slim-cra/`
+  * [Here](./slim-cra/README.md).
 * `trial-and-error-for-directory-structure/`
   * Trial and error place for React application directory structure.
+* `useSWR-samples/`
+  * [Here](./useSWR-samples/README.md).
