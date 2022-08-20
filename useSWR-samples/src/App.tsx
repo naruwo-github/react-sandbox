@@ -1,3 +1,4 @@
+import React from 'react'
 import useSWR from 'swr'
 
 const fetcher = (...args: [string]) => fetch(...args).then(res => res.json())
@@ -7,5 +8,12 @@ export const App = () => {
 
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
-  return <div>hello {data}!</div>
+
+  return (
+    <React.Fragment>
+      {(data as string[]).map((user: string, index: number) => {
+        return <h1 key={index}>Hi {user}!</h1>
+      })}
+    </React.Fragment>
+  )
 }
