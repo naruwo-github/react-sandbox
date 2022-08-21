@@ -1,7 +1,7 @@
 import React from 'react'
 import useSWR from 'swr'
 
-const fetcher = (...args: [string]) => fetch(...args).then(res => res.json())
+const fetcher = (url: string): Promise<any> => fetch(url).then(res => res.json())
 
 export const App = () => {
   const {data, error} = useSWR('http://localhost:3001/users', fetcher)
