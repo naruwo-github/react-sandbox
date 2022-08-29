@@ -7,6 +7,8 @@ This project has many experiments of React.js.
   * Execute functions in react component without reference to dom structure on display.
 * `clean-architecture/`
   * Construct a React project with Clean Architecture.
+* `graphql-sample`
+  * [Here](./graphql-sample/).
 * `rendering-in-multiple-places/`
   * Inserting rendering mechanisms into arbitrary multiple HTML elements.
 * `rendering-in-multiple-places-extended/`
