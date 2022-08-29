@@ -1,2 +1,8 @@
-# Overview
-Slim project by removing some files from create-react-app achievements.
+### Chatting App "FINE"!!!
+<img src='./public/chat-app-fine.png' >
+
+### Technology
+* React.js
+* Firebase
+  * Authentication
+  * Cloud Firestore
