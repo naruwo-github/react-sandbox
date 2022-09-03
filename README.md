@@ -7,6 +7,8 @@ This project has many experiments of React.js.
   * Execute functions in react component without reference to dom structure on display.
 * `clean-architecture/`
   * Construct a React project with Clean Architecture.
+* `fetcher/`
+  * [Here](./fetcher/README.md).
 * `graphql-sample`
   * [Here](./graphql-sample/).
 * `rendering-in-multiple-places/`
@@ -17,5 +19,3 @@ This project has many experiments of React.js.
   * [Here](./slim-cra/README.md).
 * `trial-and-error-for-directory-structure/`
   * Trial and error place for React application directory structure.
-* `useSWR-samples/`
-  * [Here](./useSWR-samples/README.md).
