@@ -5,8 +5,10 @@ This project has many experiments of React.js.
 ## Content
 * `activate-component-without-dom-reference/`
   * Execute functions in react component without reference to dom structure on display.
-* `clean-architecture/`
-  * Construct a React project with Clean Architecture.
+* `chat-app-fine/`
+  * LINE clone app.
+* `design-patterns/`
+  * Implementation of a certain design patterns with react components.
 * `fetcher/`
   * [Here](./fetcher/README.md).
 * `graphql-sample`
