@@ -1,18 +1,17 @@
+import React from "react"
+import Factory from "./factory/factory"
 import { Response, Item } from "./hooks/useFetch"
 
 type Props = {
   data: Response
+  factory: Factory
 }
 
-const App = (props: Props) => {
+const App = ({ data, factory }: Props): JSX.Element => {
   return (
-    props.data.items.map((item: Item) => {
-      return (
-        <div>
-          {item.id}
-        </div>
-      )
-    })
+    <React.Fragment>
+      {data.items.map((item: Item) => factory.create(item))}
+    </React.Fragment>
   )
 }
 

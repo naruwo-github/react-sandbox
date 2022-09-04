@@ -1,16 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
+import Factory from './factory/factory'
 import { useFetch } from './hooks/useFetch'
 
-// APIからデータ取得
 const data = useFetch()
+const factory = new Factory()
 
-// Factoryパターンで色々やる
-
-// 結果をレンダリング先に渡す
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App data={data} />
+    <App data={data} factory={factory} />
   </React.StrictMode>
 )
