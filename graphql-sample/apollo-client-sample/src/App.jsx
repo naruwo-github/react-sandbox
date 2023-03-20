@@ -3,6 +3,7 @@ import { gql, useQuery } from '@apollo/client'
 const books = gql`
   query {
     books {
+      id
       title
       author
     }
@@ -17,9 +18,9 @@ const App = () => {
   return (
     <div className="App">
       <h2>GraphQL Client</h2>
-      {data.books.map(({ title, author }, index) => (
-        <p key={index}>
-          {`${title} : ${author}`}
+      {data.books.map(({ id, title, author }) => (
+        <p key={id}>
+          {`${id} : ${title} : ${author}`}
         </p>
       ))}
     </div>
