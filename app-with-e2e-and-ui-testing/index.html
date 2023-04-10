@@ -7,7 +7,10 @@
     <title>Vite + React + TS</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div data-js-target="{'id': 'target1', 'flag': true, 'option': 'A'}">target element first.</div>
+    <div data-js-target="{'id': 'target2', 'flag': false, 'option': 'B'}">target element second.</div>
+    <div data-js-target="{'id': 'target3', 'flag': true, 'option': 'C'}">target element third.</div>
+    <script type="module" src="/src/render.tsx"></script>
+    <a href="/index2.html">Go to starter sample.</a>
   </body>
 </html>
