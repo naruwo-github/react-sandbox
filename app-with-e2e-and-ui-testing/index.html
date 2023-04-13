@@ -7,9 +7,16 @@
     <title>Vite + React + TS</title>
   </head>
   <body>
-    <div data-js-target="{'id': 'target1', 'flag': true, 'option': 'A'}">target element first.</div>
+    <h3>Rendering with my package!</h3>
+    <div>
+      <div data-js-target="{'id': 'target1', 'flag': true, 'option': 'A'}">target element first.</div>
+    </div>
     <div data-js-target="{'id': 'target2', 'flag': false, 'option': 'B'}">target element second.</div>
-    <div data-js-target="{'id': 'target3', 'flag': true, 'option': 'C'}">target element third.</div>
+    <div>
+      <div>
+        <div data-js-target="{'id': 'target3', 'flag': true, 'option': 'C'}">target element third.</div>
+      </div>
+    </div>
     <script type="module" src="/src/render.tsx"></script>
     <a href="/index2.html">Go to starter sample.</a>
   </body>
