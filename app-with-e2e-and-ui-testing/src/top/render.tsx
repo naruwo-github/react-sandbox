@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { responseMock } from './top/config'
-import { Container } from './top/container'
-import { ComponentFactory } from './top/componentFactory';
+import { responseMock } from './config'
+import { Container } from './container'
+import { ComponentFactory } from './componentFactory'
 
 const findMatchedData = (dataList: Record<string, any>[], id: string): Record<string, any> => {
     const matchedData = dataList.filter((data) => data.id === id);
