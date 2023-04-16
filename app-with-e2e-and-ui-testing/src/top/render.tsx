@@ -3,12 +3,6 @@ import ReactDOM from 'react-dom/client'
 import { setting } from './config/setting'
 import { responseMock } from './api/response'
 import { Container } from './component/container'
-import { ComponentFactory } from './component/componentFactory'
-
-const findMatchedData = (dataList: Record<string, any>[], id: string): Record<string, any> => {
-    const matchedData = dataList.filter((data) => data.id === id);
-    return matchedData.length > 0 ? matchedData[0] : {};
-};
 
 const parseDataFromElement = (element: Element) => {
     try {
@@ -20,18 +14,21 @@ const parseDataFromElement = (element: Element) => {
     }
 }
 
+// Fetch data from API
 const response = await responseMock
+
+// Get DOM elements to render UI
 const targetElements = document.querySelectorAll('[data-js-target]')
+
 targetElements.forEach(element => {
     const dataOnHtml = parseDataFromElement(element)
-    const matchedDataOnResponse = findMatchedData(response.result, dataOnHtml.id)
+    const matchedDataOnResponse = response[dataOnHtml.id]
     const matchedDataOnSetting = setting[dataOnHtml.id]
     const data = { ...dataOnHtml, ...matchedDataOnResponse, ...matchedDataOnSetting }
 
     ReactDOM.createRoot(element as HTMLElement).render(
         <React.StrictMode>
             <Container data={data} />
-            <ComponentFactory componentId={data.componentId} />
         </React.StrictMode>,
     )
 })
