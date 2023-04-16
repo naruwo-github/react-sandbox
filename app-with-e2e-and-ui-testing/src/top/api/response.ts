@@ -1,3 +1,4 @@
+// Dynamic data
 export const responseMock = {
 	result: [
 		{

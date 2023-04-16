@@ -2,8 +2,7 @@ type Props = {
     data: {
         id: string
         componentId: string
-        flag: boolean
-        option: string
+        dynamicData: string
     }
 }
 
@@ -14,8 +13,7 @@ export const Container: React.FC<Props> = ({ data }) => {
             <ul>
                 <li>id: {data.id}</li>
                 <li>componentId: {data.componentId}</li>
-                <li>flag: {data.flag ? 'OK' : 'NG'}</li>
-                <li>option: {data.option}</li>
+                <li>dynamicData: {data.dynamicData}</li>
             </ul>
         </div>
     )
