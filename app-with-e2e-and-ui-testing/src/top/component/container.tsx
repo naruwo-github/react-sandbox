@@ -1,5 +1,5 @@
 import React from "react"
-import { ComponentFactory } from "./componentFactory"
+import { ComponentFactory } from "./factory/ComponentFactory"
 
 type Props = {
     data: {

@@ -1,4 +1,7 @@
 import React from 'react';
+import { StyledH2 } from '../products/StyledH2';
+import { StyledDiv } from '../products/StyledDiv';
+import { StyledA } from '../products/StyledA';
 
 interface ComponentFactoryProps {
     componentId: ComponentType;
@@ -16,16 +19,3 @@ export const ComponentFactory: React.FC<ComponentFactoryProps> = ({ componentId 
             return null;
     }
 };
-
-const StyledH2: React.FC = () => {
-    return <h2 style={{ color: 'red' }}>This is StyledH2</h2>;
-};
-
-const StyledA: React.FC = () => {
-    return <a style={{ color: 'green' }}>This is StyledA</a>;
-};
-
-const StyledDiv: React.FC = () => {
-    return <div style={{ color: 'blue' }}>This is StyledDiv</div>;
-};
-
