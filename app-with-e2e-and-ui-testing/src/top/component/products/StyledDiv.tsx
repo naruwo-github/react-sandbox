@@ -1,3 +1,9 @@
+import styled from 'styled-components'
+
+const Div = styled.div`
+  color: blue;
+`
+
 export const StyledDiv: React.FC = () => {
-    return <div style={{ color: 'blue' }}>This is StyledDiv</div>;
+    return <Div>This is StyledDiv</Div>;
 };

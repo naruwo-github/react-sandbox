@@ -1,3 +1,9 @@
+import styled from 'styled-components'
+
+const A = styled.a`
+  color: green;
+`
+
 export const StyledA: React.FC = () => {
-    return <a style={{ color: 'green' }}>This is StyledA</a>;
+  return <A>This is StyledA</A>;
 };

@@ -1,4 +1,10 @@
+import styled from 'styled-components'
+
+const H2 = styled.h2`
+  color: red;
+`
+
 export const StyledH2: React.FC = () => {
-    return <h2 style={{ color: 'red' }}>This is StyledH2</h2>;
+    return <H2>This is StyledH2</H2>;
 };
 
