@@ -1,6 +1,7 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
+  mode:  'development', // 'production' | 'development' | 'none'
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
@@ -27,7 +28,7 @@ module.exports = {
               },
               env: {
                 targets: {
-                  browsers: ['last 2 versions', 'safari >= 7'],
+                  browsers: ['last 2 versions', 'safari >= 7', 'IE 11'],
                 },
               },
             },
@@ -52,4 +53,3 @@ module.exports = {
     ],
   },
 };
-
