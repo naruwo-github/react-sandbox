@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:allure": "npx playwright test --reporter=line,allure-playwright",
+    "report:allure": "allure generate ./allure-results --clean && allure open ./allure-report"
   },
   "dependencies": {
     "@chan-naru-way/sample-npm-package": "^1.0.4",
