@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test'
 
 test.beforeEach(async ({ page }) => {
   await page.goto('http://localhost:5173/index2.html')
+  await page.waitForLoadState('load')
 })
 
 test('The page should have the correct title', async ({ page }) => {

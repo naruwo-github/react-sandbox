@@ -17,5 +17,6 @@ env:
   browser: true
   node: true
   es2021: true
-# rules:
-# 個別に設定するESLintルールを記述
+
+rules:
+  'import/no-extraneous-dependencies': 'off'
