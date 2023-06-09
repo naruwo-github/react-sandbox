@@ -1,5 +1,5 @@
 .app {
-	color: red;
+	color: blue;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -18,15 +18,22 @@
 	&:hover {
 		background-color: darkblue;
 	}
+	&::before {
+		content: '>> ';
+	}
 }
 
 .inputContainer {
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
+	&:focus-within {
+		color: green;
+	}
 }
 
 .label {
+	color: gray;
 	margin-bottom: 10px;
 }
 
@@ -34,4 +41,11 @@
 	padding: 10px;
 	border-radius: 5px;
 	border: 1px solid gray;
+	&:focus {
+		outline: none;
+		border-color: blue;
+	}
+	&::placeholder {
+		color: lightgray;
+	}
 }
