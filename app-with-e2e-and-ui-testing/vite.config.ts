@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   // Necessary to resolve dependencies for @chan-naru-way/sample-npm-package
   optimizeDeps: {
-    include: ['styled-components', 'react-is']
+    // include: ['styled-components', 'react-is']
   }
 })
